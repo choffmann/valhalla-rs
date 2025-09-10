@@ -43,6 +43,9 @@ exclude = [
     "valhalla/third_party/unordered_dense/data",
 ]
 
+[lib]
+crate-type = ["cdylib"]
+
 # Makes possible to run profilers with `cargo bench`, e.g. `samply record cargo bench`
 [profile.bench]
 debug = "line-tables-only"
