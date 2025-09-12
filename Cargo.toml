@@ -44,7 +44,7 @@ exclude = [
 ]
 
 [lib]
-crate-type = ["cdylib"]
+crate-type = ["cdylib", "staticlib", "lib"]
 
 # Makes possible to run profilers with `cargo bench`, e.g. `samply record cargo bench`
 [profile.bench]
