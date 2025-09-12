@@ -56,13 +56,14 @@ bitflags = "2.9"
 # for fast iteration over slices of `valhalla::DirectedEdge` and `valhalla::NodeInfo`.
 cxx = { version = "=1.0.172", features = ["c++17"] }
 prost = "0.14"
+bytes = "1"
 
 [build-dependencies]
 cmake = "0.1"
-cxx-build = "=1.0.172"
-miniserde = "0.1"    # For compile_commands.json parsing
+cxx-build = "1"
 pkg-config = "0.3"
-prost-build = "0.14"
+prost-build = "0.12"
+miniserde = "0.1"
 
 [dev-dependencies]
 miniserde = "0.1"
